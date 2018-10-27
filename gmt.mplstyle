@@ -207,11 +207,11 @@ patch.linewidth        : 0.25        # edge width in points.
 # relative to font.size, using the following values: xx-small, x-small,
 # small, medium, large, x-large, xx-large, larger, or smaller
 font.size           : 12.0
-font.serif          : Liberation Serif, Nimbus Roman No9 L, Times New Roman, Times, DejaVu Serif, Bitstream Vera Serif, New Century Schoolbook, Century Schoolbook L, Utopia, ITC Bookman, Bookman,  Palatino, Charter, serif
-font.sans-serif     : Nimbus Sans L, Liberation Sans, Arial, Helvetica, DejaVu Sans, Bitstream Vera Sans, Lucida Grande, Verdana, Geneva, Lucid, Avant Garde, sans-serif
+font.serif          : Times New Roman, Liberation Serif, Nimbus Roman No9 L, Times, DejaVu Serif, Bitstream Vera Serif, New Century Schoolbook, Century Schoolbook L, Utopia, ITC Bookman, Bookman,  Palatino, Charter, serif
+font.sans-serif     : Helvetica, Arial, Nimbus Sans L, Liberation Sans, DejaVu Sans, Bitstream Vera Sans, Lucida Grande, Verdana, Geneva, Lucid, Avant Garde, sans-serif
 #font.cursive        : Apple Chancery, Textile, Zapf Chancery, Sand, Script MT, Felipa, cursive
 #font.fantasy        : Comic Sans MS, Chicago, Charcoal, Impact, Western, Humor Sans, xkcd, fantasy
-font.monospace      : Nimbus Mono L, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Andale Mono,  Courier New, Courier, Fixed, Terminal, monospace
+font.monospace      :  Courier, Nimbus Mono L, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Andale Mono,  Courier New, Fixed, Terminal, monospace
 
 ### TEXT
 # text properties used by text.Text.  See
@@ -364,12 +364,12 @@ axes.prop_cycle    : cycler('color', ['k'])
 # see http://matplotlib.org/api/axis_api.html#matplotlib.axis.Tick
 #xtick.top            : False   # draw ticks on the top side
 #xtick.bottom         : True   # draw ticks on the bottom side
-xtick.major.size     : 5.66      # major tick size in points
-#xtick.minor.size     : 2      # minor tick size in points
+xtick.major.size     : 5.0      # major tick size in points
+xtick.minor.size     : 3.0      # minor tick size in points
 xtick.major.width    : 0.5    # major tick width in points
 xtick.minor.width    : 0.5    # minor tick width in points
-xtick.major.pad      : 5.66     # distance to major tick label in points
-#xtick.minor.pad      : 3.4      # distance to the minor tick label in points
+xtick.major.pad      : 3.0    # distance to major tick label in points
+xtick.minor.pad      : 3.0      # distance to the minor tick label in points
 #xtick.color          : k      # color of the tick labels
 xtick.labelsize      : 14 # fontsize of the tick labels
 #xtick.direction      : out    # direction: in, out, or inout
@@ -381,12 +381,12 @@ xtick.labelsize      : 14 # fontsize of the tick labels
 
 #ytick.left           : True   # draw ticks on the left side
 #ytick.right          : False  # draw ticks on the right side
-ytick.major.size     : 5.66      # major tick size in points
-#ytick.minor.size     : 2      # minor tick size in points
+ytick.major.size     : 5.0      # major tick size in points
+ytick.minor.size     : 3.0      # minor tick size in points
 ytick.major.width    : 0.5    # major tick width in points
 ytick.minor.width    : 0.5    # minor tick width in points
-ytick.major.pad      : 5.66      # distance to major tick label in points
-#ytick.minor.pad      : 3.4      # distance to the minor tick label in points
+ytick.major.pad      : 3.0      # distance to major tick label in points
+ytick.minor.pad      : 3.0      # distance to the minor tick label in points
 #ytick.color          : k      # color of the tick labels
 ytick.labelsize      : 14 # fontsize of the tick labels
 #ytick.direction      : out    # direction: in, out, or inout
@@ -529,7 +529,7 @@ image.cmap   : jet           # A colormap name, gray, viridis, etc...
 
 # ps backend params
 #ps.papersize      : letter   # auto, letter, legal, ledger, A0-A10, B0-B10
-#ps.useafm         : False    # use of afm fonts, results in small files
+ps.useafm         : True    # use of afm fonts, results in small files
 #ps.usedistiller   : False    # can be: None, ghostscript or xpdf
                                           # Experimental: may produce smaller files.
                                           # xpdf intended for production of publication quality files,
